@@ -11,7 +11,7 @@ export default function Header({ products, cart }) {
 
   return (
     <div className="header-container">
-      <Link to={"/"}>
+      <Link to={"/home"}>
         <div className="logo">
           <img src={`${process.env.PUBLIC_URL}/Images/RUSHIK LOGO 732G.png`} alt="Logo" />
         </div>
