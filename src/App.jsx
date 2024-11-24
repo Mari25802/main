@@ -21,7 +21,7 @@ function App() {
           <Header products={products} cart={cart} />
           {/* <div className="container"> */}
             <Routes>
-              <Route path="/" element={<Home products={products} />} />
+              <Route path="/home" element={<Home products={products} />} />
               <Route path="/Product/:Category" element={<Products products={products} />} />
               <Route path="/cart" element={<ViewCart />} />
             </Routes>
