@@ -19,13 +19,16 @@ function App() {
         {/* Wrap the SearchProvider inside the Router */}
         <SearchProvider>
           <Header products={products} cart={cart} />
-          {/* <div className="container"> */}
-            <Routes>
-              <Route path="/home" element={<Home products={products} />} />
-              <Route path="/Product/:Category" element={<Products products={products} />} />
-              <Route path="/cart" element={<ViewCart />} />
-            </Routes>
-          {/* </div> */}
+          <Routes>
+            {/* Route for Home */}
+            <Route path="/" element={<Home products={products} />} />
+            
+            {/* Route for Products */}
+            <Route path="/Product/:Category" element={<Products products={products} />} />
+
+            {/* Route for Cart */}
+            <Route path="/cart" element={<ViewCart />} />
+          </Routes>
         </SearchProvider>
       </BrowserRouter>
     </cartContext.Provider>
