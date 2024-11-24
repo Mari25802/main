@@ -48,7 +48,7 @@ const addCart=(products)=>
             <div className="box" key={index}>
               <Link to={`/Product/${productCategory.Category}`}>
                 <div className="image">
-                  <img src={`${process.env.PUBLIC_URL}/${productCategory.Image}`} alt={productCategory.Category} />
+                  <img src={`${process.env.PUBLIC_URL}/${productCategory.Image}`} alt={productCategory.Image} />
                 </div>
                 <h2>{productCategory.Category}</h2>
               </Link>

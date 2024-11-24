@@ -19,6 +19,7 @@ export default function Products({ products }) {
   const banner=selectedCategory[0].banner;
 
   console.log("bann",banner)
+
   const filteredProducts = selectedCategory.length
     ? selectedCategory[0].Products.filter((product) =>
         product.Name.toLowerCase().includes(search.toLowerCase())
@@ -30,8 +31,8 @@ export default function Products({ products }) {
 
   return (
     <div className="product-container">
-        {banner && selectedCategory.map((bann)=>(
-            <div className="banner">
+        {banner && selectedCategory.map((bann,index)=>(
+            <div className="banner" key={index}>
             <img src={`${process.env.PUBLIC_URL}/${banner}`} alt="" />
         </div>
         ))}
