@@ -10,8 +10,9 @@ export default function Header({ products, cart }) {
   };
 
   return (
+    <>
     <div className="header-container">
-      <Link to={"/home"}>
+      <Link to={"/main"}>
         <div className="logo">
           <img src={`${process.env.PUBLIC_URL}/Images/RUSHIK LOGO 732G.png`} alt="Logo" />
         </div>
@@ -42,5 +43,6 @@ export default function Header({ products, cart }) {
         </h2>
       </div>
     </div>
+    </>
   );
 }

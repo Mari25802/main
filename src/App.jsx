@@ -21,7 +21,7 @@ function App() {
           <Header products={products} cart={cart} />
           <Routes>
             {/* Route for Home */}
-            <Route path="/home" element={<Home products={products} />} />
+            <Route path="/main" element={<Home products={products} />} />
             
             {/* Route for Products */}
             <Route path="/Product/:Category" element={<Products products={products} />} />

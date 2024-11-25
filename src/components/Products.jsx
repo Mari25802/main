@@ -30,6 +30,7 @@ export default function Products({ products }) {
     name.length > length ? name.substring(0, length) + "..." : name;
 
   return (
+    
     <div className="product-container">
         {banner && selectedCategory.map((bann,index)=>(
             <div className="banner" key={index}>
